@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# 🎶 Jamming - Spotify Playlist Creator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Jamming è una web app creata con React che consente agli utenti di cercare brani su Spotify, creare playlist personalizzate e salvarle direttamente sul proprio account Spotify.
 
-## Available Scripts
+## 🚀 Funzionalità
+- **Ricerca Brani**: Effettua ricerche di brani utilizzando l'API di Spotify.
+- **Aggiungi alla Playlist**: Seleziona i brani che preferisci per creare una playlist personalizzata.
+- **Modifica Nome della Playlist**: Imposta un nome personalizzato per la tua nuova playlist.
+- **Salva su Spotify**: Salva la tua playlist direttamente sul tuo account Spotify.
 
-In the project directory, you can run:
+## 🛠️ Installazione
 
-### `npm start`
+### Prerequisiti
+- [Node.js](https://nodejs.org) installato sul proprio computer.
+- Un account Spotify e l'accesso al [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/) per ottenere le credenziali necessarie (Client ID e Client Secret).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Passaggi per l'installazione
+1. **Clona il repository**:
+   ```bash
+   git clone https://github.com/tuo-username/jamming.git
+   cd jamming
+   ```
+2. **Installa le dipendenze:**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+npm install
+```
+3. **Crea il file** .env: Nella directory principale del progetto, crea un file chiamato .env e aggiungi le seguenti variabili con il tuo Client ID e Client Secret di Spotify:
+```
+REACT_APP_SPOTIFY_CLIENT_ID=tuo_client_id
+REACT_APP_SPOTIFY_CLIENT_SECRET=tuo_client_secret
+```
+4. **Aggiungi** .env al file .gitignore: Assicurati che il file .env non venga caricato su GitHub aggiungendolo al .gitignore:
+```
+# Environment variables
+.env
+```
+5. **Avvia l'applicazione**:
+```
+npm start
+```
+L'app sarà disponibile su http://localhost:3000.
 
-### `npm test`
+## 📁 Struttura del Progetto
+- App.js: Componente principale dell’app che gestisce lo stato globale.
+- Search.js: Componente per la ricerca dei brani su Spotify.
+- Result.js: Visualizza i risultati della ricerca e permette di aggiungere brani alla playlist.
+- Playlist.js: Gestisce la visualizzazione e il salvataggio della playlist creata.
+- TrackList.js: Mostra una lista di tracce, con opzioni per aggiungere o rimuovere brani.
+- Track.js: Si occupa di mostra ogni singola traccia con titolo,artista e album.
+  
+## 📝 Configurazione API di Spotify
+Vai su Spotify Developer Dashboard e crea un'app.
+Copia il Client ID e il Client Secret forniti.
+Aggiungi questi valori nel file .env come mostrato sopra.
+Configura il Redirect URI nel Spotify Developer Dashboard (puoi usare http://localhost:3000/callback per l'ambiente di sviluppo).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Tecnologie Utilizzate
+- React
+- Spotify Web API
 
-### `npm run build`
+## ⚠️ Note di Sicurezza
+Non condividere il file .env o le tue credenziali su GitHub o altre piattaforme pubbliche.
+Controlla sempre di aver aggiunto .env al .gitignore prima di eseguire commit o push.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
