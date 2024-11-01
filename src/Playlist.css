@@ -1,0 +1,20 @@
+.nome-playlist{
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+.save{
+    margin-top: 1rem;
+    background-color: #21324b;
+    color:#c6c5b4;
+    height: 2.5rem;
+    min-width: 10rem;
+    border-radius: 10%;
+    font-weight: 900;
+    box-shadow: 2px 5px 2px #21324b;
+
+}
+.save:focus:active{
+    height: 2.5rem;
+    background-color: #c6c5b4;
+    color:#21324b;
+    }

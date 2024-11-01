@@ -1,0 +1,28 @@
+.track-containers{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+.track-name{
+    width:90%;
+}
+.track-name h3{
+    color: black;
+    text-shadow: 1px 1px #c6c5b4;
+    font-size: 1.1rem;
+}
+.track-name p{
+    font-style: italic;
+    margin-top: -1rem;
+}
+.add-rem{
+    height: 1.5rem;
+    background-color: #21324b;
+    color:#c6c5b4;
+}
+.add-rem:focus:active{
+    height: 1.5rem;
+    background-color: #c6c5b4;
+    color:#21324b;
+}
