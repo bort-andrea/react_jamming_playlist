@@ -10,19 +10,22 @@
 .barra{
     min-width: 12rem;
     text-align: center;
-    background-color: #c6c5b4;
-    color:#21324b;
-    font-weight: bold;
+    background-color: #fff;
+    color:#000;
+    font-weight:300;
     font-size: 0.8rem;
     padding:0.5rem;
+    border-radius: 5px;
+    border-color: #fff;
 }
 .button{
-    background-color: #ce472f;
+    background-color: #7cf3a0;
     height: 2.5rem;
     width: 8rem;
-    border-radius: 10%;
+    border-radius: 5px;
     font-weight: 900;
-    box-shadow: 2px 5px 2px #21324b;
+    box-shadow: 1px 3px 2px #b4f8c8;
+    border-color: #fff;
 }
 
 .button:active:focus{

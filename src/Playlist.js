@@ -9,7 +9,7 @@ const Playlist = (props) =>{
     },[props.onNameChange]);
 
     return (
-        <div>
+        <div className="playlist_result">
           <input className="nome-playlist" onChange={handleNameChange} defaultValue={"New Playlist"} />
           <TrackList
             tracks={props.traccePlaylist}
